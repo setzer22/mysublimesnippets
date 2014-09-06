@@ -1,0 +1,34 @@
+<snippet>
+	<content><![CDATA[
+#pragma once
+
+#include "LogicComponent.h"
+#include "APITemplates.h"
+
+using namespace Urho3D;
+
+class ${1:MyComponent} : public LogicComponent { 
+	OBJECT(${1:MyComponent})  
+
+public:
+
+	${1:MyComponent}(Context* context);
+
+	static void RegisterObject(Context* context);
+
+    virtual void ApplyAttributes();
+
+    static void BindScriptMethods(asIScriptEngine *engine);
+    
+    virtual void Start();
+  
+private:
+	
+	
+};
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>Urho3DComponent</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>
