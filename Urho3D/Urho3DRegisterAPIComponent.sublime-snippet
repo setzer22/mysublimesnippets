@@ -1,0 +1,12 @@
+	<snippet>
+	<content><![CDATA[
+engine->RegisterObjectType("${1:class}",0, asOBJ_REF);
+engine->RegisterObjectBehaviour("Component", asBEHAVE_REF_CAST, "$1@ f()", 
+	asFUNCTION((RefCast<Component,$1>)), asCALL_CDECL_OBJLAST);
+engine->RegisterObjectBehaviour("$1", asBEHAVE_ADDREF, "void f()", asMETHOD($1,AddRef), asCALL_THISCALL);
+engine->RegisterObjectBehaviour("$1", asBEHAVE_RELEASE, "void f()", asMETHOD($1,ReleaseRef), asCALL_THISCALL);]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>AS_Component</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>

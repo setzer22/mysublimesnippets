@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[ATTRIBUTE(${1:class}, ${2:variant_type}, ${3:name}, ${4:field}, 0, AM_DEFAULT);]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>Urho3D_ATTRIBUTE_field</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>

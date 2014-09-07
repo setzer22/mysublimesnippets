@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-engine->RegisterObjectMethod("${1:class}", "${2:return} ${3:function}(${4:arguments})", asMETHOD($1, $3, (${5:c++arguments}), $2), asCALL_THISCALL);
+engine->RegisterObjectMethod("${1:class}", "${2:return} ${3:function}(${4:arguments})", asMETHODPR($1, $3, (${5:c++arguments}), $2), asCALL_THISCALL);
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>AS_method_overload</tabTrigger>
